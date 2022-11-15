@@ -1,9 +1,41 @@
-import React from 'react'
+import { useLoaderData } from "react-router-dom";
+import { obtenerClientes } from "../data/clientes";
+import Cliente from "../components/Cliente";
 
-function Index() {
-  return (
-    <h1>Clientes</h1>
-  )
+export function loader() {
+  const clientes = obtenerClientes()
+  return clientes
+
 }
 
-export default Index
+function Index() {
+  const clientes = useLoaderData();
+
+  return (
+    <>
+      <h1 className="font-black text-4xl text-blue-900">Clientes</h1>
+      <p className="mt-3">Administra tus Clientes</p>
+
+      {clientes.length ? (
+        <table className="w-full bg-white shadoe mt-5 table-auto">
+          <thead className="bg-blue-800 text-white">
+            <tr>
+              <th className="p-2">Cliente</th>
+              <th className="p-2">Contactos</th>
+              <th className="p-2">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            {clientes.map((cliente) => (
+              <Cliente key={cliente.id} cliente={cliente} />
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p className="text-center mt-10">No hay Clintes aún</p>
+      )}
+    </>
+  );
+}
+
+export default Index;
