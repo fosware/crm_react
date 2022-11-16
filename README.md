@@ -20,5 +20,12 @@ npm install
 
 npm run dev
 ```
+in another terminal
+
+```
+cd crm_react
+
+json-server db.json
+```
 
 
