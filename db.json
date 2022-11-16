@@ -24,21 +24,6 @@
       "empresa": "Codigo Con Juan"
     },
     {
-      "id": 5,
-      "nombre": "Pedro",
-      "telefono": 1398198938,
-      "email": "pedro@juan.com",
-      "empresa": "Codigo Con Juan"
-    },
-    {
-      "nombre": "Juan Desde React",
-      "empresa": "Codigo con Juan",
-      "email": "correo@correo.com",
-      "telefono": "10901",
-      "notas": "El Cliente desea un ecommerce",
-      "id": 6
-    },
-    {
       "nombre": "Mario",
       "empresa": "fosware",
       "email": "fosahadal@protonmail.com",
