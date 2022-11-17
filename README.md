@@ -11,6 +11,13 @@ Node.js, Express, React, Vite, CSS, Tailwind CSS
 - Consume Fake API with JSON Server
 
 ## Usage
+
+Prerequisite JSON Server (globaly)
+```
+npm install -g json-server
+````
+Download and install the proyect
+
 ```
 git clone https://github.com/fosware/crm_react.git  
 
@@ -20,7 +27,7 @@ npm install
 
 npm run dev
 ```
-in another terminal
+in another terminal run JSON Server
 
 ```
 cd crm_react
