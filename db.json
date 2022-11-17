@@ -24,12 +24,20 @@
       "empresa": "Codigo Con Juan"
     },
     {
-      "nombre": "Mario",
-      "empresa": "fosware",
+      "nombre": "Mario A",
+      "empresa": "fosware SA CV",
       "email": "fosahadal@protonmail.com",
-      "telefono": "213123123",
-      "notas": "Ya mero",
-      "id": 7
+      "telefono": "332323232",
+      "notas": "Editados",
+      "id": 5
+    },
+    {
+      "nombre": "Erick",
+      "empresa": "Erick Software",
+      "email": "erick@jalisco.gob.mx",
+      "telefono": "222222",
+      "notas": "sdfsfadsfgasg",
+      "id": 6
     }
   ]
 }

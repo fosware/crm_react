@@ -59,9 +59,9 @@ function EditarCliente() {
         Modifica la información de un Cliente
       </p>
 
-      <div className="flex justify-end">
+      <div className="flex justify-end md:max-w-[87%]">
         <button
-          className="bg-blue-800 text-white px-3 font-bold uppercase"
+          className="bg-blue-800 text-white px-4 py-2 font-bold uppercase rounded-md"
           onClick={() => navigate("/")}
         >
           Volver
@@ -76,7 +76,7 @@ function EditarCliente() {
           />
           <input
             type="submit"
-            className="mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white texr-lg"
+            className="mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white texr-lg rounded-md"
             value="Guardar cambios"
           ></input>
         </Form>

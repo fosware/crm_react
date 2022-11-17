@@ -43,9 +43,9 @@ function NuevoCliente() {
         Llena todos los campos para registrar un nuevo cliente
       </p>
 
-      <div className="flex justify-end">
+      <div className="flex justify-end md:max-w-[87%]">
         <button
-          className="bg-blue-800 text-white px-3 font-bold uppercase"
+          className="bg-blue-800 text-white px-3 py-2 font-bold uppercase rounded-md"
           onClick={() => navigate("/")}
         >
           Volver
@@ -55,11 +55,11 @@ function NuevoCliente() {
         {errores?.length &&
           errores.map((error, i) => <Error key={i}>{error}</Error>)}
 
-        <Form method="POST" noValidate>
+        <Form method="POST">
           <Formulario />
           <input
             type="submit"
-            className="mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white texr-lg"
+            className="mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white texr-lg rounded-md"
             value="Registrar Cliente"
           ></input>
         </Form>
